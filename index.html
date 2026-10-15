@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <!-- Recommended meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+        <!-- PyScript CSS -->
+        <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+        <link rel="stylesheet" href="styles.css">
+    
+        <!-- This script tag bootstraps PyScript -->
+        <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    
+        <!-- GOOGLE FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+        <title>Candidate Verification System</title>
+    </head>
+<body>
+    <div class="form-control" style="background-color: rgba(255, 204, 211, 0.644); padding: 30px; color:rgb(78, 40, 46); font-family: 'Saira', sans-serif">
+    <h1>Math Club Member Checker</h1>
+    <hr>
+    <form>
+        <label style="font-size: 20px;">Enter Your First Name</label><br>
+        <input type="text" style="font-size: 20px;"id="firstname" placeholder="Enter First name"><br>
+        <label style="font-size: 20px;">Enter Your Last Name</label><br>
+        <input type="text" style="font-size: 20px;" id="lastname" placeholder="Enter Last name"><br><br>
+        <input type="button" style="font-size: 20px; color: rgb(165, 46, 165); border-radius: 20%; font-family: Saira, sans-serif;" py-click="view_member" value="Enter">
+    </form>
+    <hr>
+    <div id="result" style="font-size: 30px; padding: 30px;"></div>
+    </div>
+
+        
+    <!-- Python code runs here -->
+    <script type="py" src="main.py"></script>
+</body>
+</html>
